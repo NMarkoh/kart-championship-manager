@@ -5,6 +5,14 @@ Versions marked **(Pre-release / Unstable)** are pre-`1.0.0` or pre-release snap
 
 ---
 
+## [v0.7.2] - 2026-11-28 (Pre-release / Unstable)
+
+### Fixed
+- **Platform Admin Sign-In Diagnostics & Recovery**: Added explicit `auth/unauthorized-domain`, `auth/operation-not-allowed`, and `auth/cancelled-popup-request` error messages, single-flight account hydration during Google OAuth, and profile-error + verification-email resend/refresh controls in the Platform Admin sign-in gate.
+- **Global Track Import & Sync Reliability**: Added defensive Global Track normalization (`normalizeGlobalTrackDoc`, `buildOrgTrackFromGlobal`, `normalizeDefaultKartPool`) with guaranteed layout fallbacks, Firestore rules length caps (`defaultKartPool <= 60`), and safe `stats.trackCount` updates when importing or syncing catalog circuits into an organization.
+
+---
+
 ## [v0.7.1] - 2026-11-27 (Pre-release / Unstable)
 
 ### Fixed
