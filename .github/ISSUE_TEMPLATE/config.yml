@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Releases & Downloads
+    url: https://github.com/NMarkoh/kart-championship-manager/releases
+    about: Download Stable or Pre-release (Unstable) self-hosting bundles
+  - name: Self-Hosting Documentation
+    url: https://github.com/NMarkoh/kart-championship-manager/blob/main/docs/self-hosting.md
+    about: Setup guide for running Go Kart Championship Manager on your own Firebase project

@@ -1,0 +1,31 @@
+name: Feature Request
+description: Suggest a feature or self-hosting improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - User App (Championships, Events, Sessions, Roster, Tracks)
+        - Platform Admin Console
+        - Self-Hosting & Documentation
+        - Scoring Engine / Domain Logic
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the use case for your league or self-hosted setup. Do not include any personal emails or private keys.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you expect this to work?
+    validations:
+      required: false
